@@ -22,12 +22,15 @@ import android.nfc.tech.NfcA;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -158,5 +161,31 @@ public class Act5 extends AppCompatActivity {
         ad = adb.create();
         enableRead();
         ad.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        String st = item.getTitle().toString();
+        Intent intent = new Intent();
+        if(st.equals("Act1")){
+            intent = new Intent(this, Act1.class);
+        }
+        if(st.equals("Act2")){
+            intent = new Intent(this, Act2.class);
+        }
+        if(st.equals("Act3")){
+            intent = new Intent(this, Act3.class);
+        }
+        if(st.equals("Act4")){
+            intent = new Intent(this, Act4.class);
+        }
+        startActivity(intent);
+        return super.onOptionsItemSelected(item);
     }
 }
