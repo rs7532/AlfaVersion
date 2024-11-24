@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Act1" />
+    <item android:title="Act2" />
+    <item android:title="Act3" />
+    <item android:title="Act4" />
+    <item android:title="Act5" />
+</menu>

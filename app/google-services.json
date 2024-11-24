@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376945127789",
+    "project_id": "alfa-version",
+    "storage_bucket": "alfa-version.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376945127789:android:5877d6dd5386e9c5ecaa64",
+        "android_client_info": {
+          "package_name": "com.example.alfaversion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBinV3DoWRk7Pw6ygJn2uWNxBtlVWvttQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
