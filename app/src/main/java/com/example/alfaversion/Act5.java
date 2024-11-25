@@ -67,6 +67,7 @@ public class Act5 extends AppCompatActivity {
         Intent intent = new Intent(this, getClass());
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
+
         nfcAdapter = NfcAdapter.getDefaultAdapter(this);
 
         pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -151,7 +152,7 @@ public class Act5 extends AppCompatActivity {
                 }
             }
         }
-}
+    }
 
 
     public void clicked_Act5(View view) {
